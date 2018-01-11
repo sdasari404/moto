@@ -39,7 +39,7 @@ else:
 
 setup(
     name='moto-ext',
-    version='1.1.25.1',
+    version='1.1.25.3',
     description='A library that allows your python tests to easily'
                 ' mock out the boto library',
     author='Steve Pulec',
