@@ -686,6 +686,9 @@ class ResourceMap(collections_abc.Mapping):
         while remaining_resources and tries < 5:
             for resource in remaining_resources.copy():
                 parsed_resource = self._parsed_resources.get(resource)
+                if parsed_resource is None:
+                    remaining_resources.remove(resource)
+                    continue
                 try:
                     if parsed_resource and hasattr(parsed_resource, "delete"):
                         parsed_resource.delete(self._region_name)

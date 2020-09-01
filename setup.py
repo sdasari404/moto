@@ -99,7 +99,7 @@ else:
 
 setup(
     name='moto-ext',
-    version='1.3.15.18',
+    version='1.3.15.30',
     description='A library that allows your python tests to easily'
                 ' mock out the boto library',
     long_description=read('README.md'),
